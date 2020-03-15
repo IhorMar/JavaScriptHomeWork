@@ -66,7 +66,7 @@ if (isAdult < 10){
 }
 
 
-//TASK#6
+// TASK#6
 
 let firstSide = a = Number(prompt("Enter the first side of the triangle."));
 let secondSide = b = Number(prompt("Enter the second side of the triangle."));
@@ -74,10 +74,10 @@ let thirdSide = c = Number(prompt("Enter the third side of the triangle."));
 let halfPerymetrOfTriangle = hp = (a + b + c) / 2;
 let areaOfTriangle = parseFloat((hp * (hp - a) * (hp - b) * (hp - c)) ** (1/2));
 
-if (a <= 0 || b <= 0 || c <= 0){
+if ((a <= 0 || b <= 0 || c <= 0) || (isNaN(a) || isNaN(b) || isNaN(c)) ){
   alert("Incorrect data!")
 } else {
-    console.log(areaOfTriangle);
+      console.log(areaOfTriangle);
     if ((a ** 2 + b ** 2 == c ** 2) || (b ** 2 + c ** 2 == a ** 2) || (a ** 2 + c ** 2 == b ** 2)){
       console.log("This is a right triangle.");
     } else {
@@ -92,11 +92,11 @@ if (a <= 0 || b <= 0 || c <= 0){
 let currentDateA = new Date();
 let currentHourA = currentDateA.getHours();
 
-if (currentHourA > 23 || currentHourA <= 5){
+if (currentHourA > 23 && currentHourA <= 5){
   alert("Good night!");
-} else if (currentHourA > 5 || currentHourA <= 11) {
+} else if (currentHourA > 5 && currentHourA <= 11) {
   alert("Good morning!");
-} else if (currentHourA > 11 || currentHourA <= 17) {
+} else if (currentHourA > 11 && currentHourA <= 17) {
   alert("Good afternoon!");
 } else {
   alert("Good evening!");
@@ -108,15 +108,16 @@ if (currentHourA > 23 || currentHourA <= 5){
 
 let currentDateB = new Date();
 let currentHourB = currentDateB.getHours();
+console.log(currentHourB);
 
 switch (true) {
-  case (currentHourB > 23 || currentHourB <= 5):
+  case (currentHourB > 23 && currentHourB <= 5):
     alert("Good night!");
     break;
-  case (currentHourB > 5 || currentHourB <= 11):
+  case (currentHourB > 5 && currentHourB <= 11):
     alert("Good morning!");
     break;
-  case (currentHourB > 11 || currentHourB <= 17):
+  case (currentHourB > 11 && currentHourB <= 17):
     alert("Good afternoon!");
     break;
   default:
