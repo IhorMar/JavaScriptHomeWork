@@ -45,40 +45,39 @@
 
 //TASK #3---------------------------------------
 
-// class Worker {
-//   constructor(fullName,dayRate,workingDays){
-//     this.fullName = fullName;
-//     this.dayRate = dayRate;
-//     this.workingDays = workingDays;
-//   }
-//   showSalary(){
-//     let salary = Math.round(this.dayRate * this.workingDays);
-//     console.log(`${this.fullName} salary: ${salary}`);
-//   }
-//
-//     showExp = 1.2;
-//
-//   showSalaryWithExperience(){
-//     let showSalExp = Math.round(this.dayRate * this.workingDays * this.showExp);
-//     console.log(`${this.fullName} salary: ${showSalExp}`);
-//     // console.log(showSalExp);
-//   }
-//   set setExp(value){
-//     this.showExp = value;
-//   }
-//   get getExp(){
-//     return this.showExp;
-//   }
-// }
-//
-// let worker1 = new Worker("John Johnson", 20, 23);
-// console.log(worker1.fullName);
-// worker1.showSalary();
-// console.log("New experience: " + worker1.showExp);
-// worker1.showSalaryWithExperience();
-// worker1.setExp = 1.5;
-// console.log("New experience: " + worker1.showExp);
-// worker1.showSalaryWithExperience();
+class Worker {
+  constructor(fullName,dayRate,workingDays){
+    this.fullName = fullName;
+    this.dayRate = dayRate;
+    this.workingDays = workingDays;
+  }
+  showSalary(){
+    let salary = Math.round(this.dayRate * this.workingDays);
+    console.log(`${this.fullName} salary: ${salary}`);
+  }
+
+    _showExp = 1.2;
+
+  showSalaryWithExperience(){
+    let showSalExp = Math.round(this.dayRate * this.workingDays * this._showExp);
+    console.log(`${this.fullName} salary: ${showSalExp}`);
+  }
+  get showExp(){
+    return this._showExp;
+  }
+    set showExp(value){
+    this._showExp = value;
+  }
+}
+
+let worker1 = new Worker("John Johnson", 20, 23);
+console.log(worker1.fullName);
+worker1.showSalary();
+console.log("New experience: " + worker1.showExp);
+worker1.showSalaryWithExperience();
+worker1.showExp = 1.5;
+console.log("New experience: " + worker1.showExp);
+worker1.showSalaryWithExperience();
 
 
 //TASK#4---------------------------------------------
@@ -130,7 +129,7 @@
 
 //TASK#5---------------------------------------------------
 
-// 
+//
 // class GeometricFigure{
 //
 //   getArea(){
