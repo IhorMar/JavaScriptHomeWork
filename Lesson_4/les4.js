@@ -103,7 +103,6 @@
 //
 //   showFullName(midleName){
 //     this.midleName = midleName;
-//     // return(`${this.surname} ${this.name} ${this.midleName} `);
 //     return(`${this.surname} ${super.showFullName()} `);
 //   }
 //
