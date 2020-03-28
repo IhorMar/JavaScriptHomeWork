@@ -50,6 +50,7 @@
 
 //TASK#5-------------------------------
 
+
 // document.querySelector("h1").style.backgroundColor = "green";
 //
 // let divSection = document.getElementById("myDiv");
@@ -58,7 +59,8 @@
 //   divSection.querySelectorAll('p')[2].style.textDecoration = "underline";
 //   divSection.querySelectorAll('p')[3].style.fontStyle = "italic";
 //
-//
+// //----variant#1------
+
 // let listParagraf = [];
 // let ulList = document.getElementById("myList");
 // let lists = document.querySelectorAll("li");
@@ -71,12 +73,23 @@
 //         ulList.replaceWith(newParagraf,ulList)
 //         ulList.remove();
 
-
+    //----variant#2------
+  
+    // let myList = document.getElementById("myList");
+    // let vertikalList = document.querySelectorAll("li");
+    // 
+    //   for (var i = 0; i < vertikalList.length; i++) {
+    //     vertikalList[i].style.display = "inline";
+    //   };
 
 // document.getElementsByTagName("span")[0].style.visibility = "hidden";
 
 
+
+
 //TASK#6-------------------------------
+
+//-------Previous variant --------
 
 // let input1 = document.getElementById("input1");
 // let input2 = document.getElementById("input2");
@@ -88,6 +101,28 @@
 // input2.value = message2;
 //
 // input1.before(input2)
+
+
+//------Next correct variant---------
+
+// let input1 = document.getElementById("input1");
+//   let input2 = document.getElementById("input2");
+//
+// let message1 = prompt("Enter you first message.");
+//   let message2 = prompt("Enter you second message.");
+//
+// let value1 = input1.getAttribute("value");//Text1
+//   let value2 = input2.getAttribute("value");//Text2
+//     console.log(`Text1 =  ${message1}`);
+//     console.log(`Text2 =  ${message2}`);
+//
+//     let tempConteiner = value2;//Text2
+//
+// input2.removeAttribute("value2");
+//   input2.setAttribute("value",value1);//Text1
+//     input1.removeAttribute("value1");
+//       input1.setAttribute("value",tempConteiner);//Text2
+
 
 
 //TASK#7-------------------------------
