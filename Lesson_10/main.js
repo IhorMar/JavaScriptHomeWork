@@ -78,7 +78,6 @@ let values = ["div", "span", "b", "i"];
 function mapBuilder(keys, values) {
     const map = new Map();
     for (let index = 0; index < keys.length; index++) {
-        let element = keys[index];
         map.set(keys[index], values[index])
     }
     return map;
