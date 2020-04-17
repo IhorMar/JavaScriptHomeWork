@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- TASK#1 -->
+    <button id="vote">Vote</button>
+
+
+    <!-- TASK#2 -->
+    <button id="book" onclick=findAuthor()>Download books</button>
+    <ul id="author"></ul>
+
+    <script>
+        // TASK#1
+
+
+        let allDate = Date.now();
+
+        let date = new Date(allDate);
+        let butVote = document.getElementById("vote");
+        butVote.addEventListener("click",
+            function reName() {
+                const xml = new XMLHttpRequest();
+                xml.open("GET", "test.txt");
+                xml.onreadystatechange = function() {
+                    if (xml.readyState === 4) {
+                        if (xml.status == 200) {
+                            butVote.innerHTML = xml.responseText + date.toString();
+                        }
+                    }
+                }
+                xml.send();
+            }
+        )
+
+        // TASK#2
+        let but = document.getElementById("book");
+        let list = document.getElementById("author");
+
+        function findAuthor() {
+            const ajax = new XMLHttpRequest();
+            ajax.open("GET", "books.json");
+            ajax.onreadystatechange = function() {
+                if (ajax.readyState === 4) {
+                    if (ajax.status == 200) {
+                        let user = JSON.parse(ajax.responseText);
+                        but.remove();
+                        for (let index = 0; index < user.length; index++) {
+                            let newLi = '<li> ' + user[index].author + '</li>';
+                            list.insertAdjacentHTML('afterend', newLi);
+                        }
+                    }
+                }
+            }
+            ajax.send();
+        }
+    </script>
+</body>
+
+</html>
