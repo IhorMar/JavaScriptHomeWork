@@ -1,0 +1,141 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.wrapper {
+    background-color: #D1E0CA;
+    overflow: auto;
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    width: auto;
+    height: 100px;
+}
+
+.aside {
+    height: 400px;
+    width: 25%;
+    float: left;
+}
+
+.aside1 {
+    height: 85px;
+}
+
+.content {
+    height: 400px;
+    width: 45%;
+    float: left;
+}
+
+.content1 {
+    height: 80px;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 45px;
+}
+
+.sidebar {
+    height: 400px;
+    width: 30%;
+    float: left;
+}
+
+.sidebar1 {
+    overflow: auto;
+    height: 85px;
+}
+
+#day {
+    background-color: #CEE0D6;
+    margin-left: 30px;
+    margin-top: 35px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+#list {
+    background-color: #CEE0D6;
+    margin-left: 35px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+#newList {
+    background-color: #37E028;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 55px;
+    font-size: 19px;
+    font-variant: small-caps;
+}
+
+#clearAll {
+    background-color: #37E028;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 55px;
+    font-size: 19px;
+    font-variant: small-caps;
+}
+
+#Items {
+    background-color: #CEE0D6;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 40px;
+    width: 300px;
+    height: 50px;
+}
+
+#buttonAdd {
+    background-color: #37E028;
+    border-radius: 5px;
+    width: 50px;
+    height: 55px;
+    font-size: 25px;
+}
+
+#check,
+#deleteButtons {
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: block;
+}
+
+#deleteButtons {
+    width: 50px;
+}
+
+#delete {
+    background-color: #37E028;
+    width: 50px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 25px;
+    margin-top: 10px;
+}
