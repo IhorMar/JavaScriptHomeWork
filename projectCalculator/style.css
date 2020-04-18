@@ -1,0 +1,46 @@
+.wrapper {
+    margin: 20px auto;
+    text-align: center;
+    width: 230px;
+    height: 360px;
+    background-color: #B8E0CE;
+    border-radius: 8px;
+}
+
+.buttons {
+    width: 220px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.buttons>input {
+    height: 50px;
+    width: 50px;
+    background-color: #46E08B;
+    border-radius: 10px;
+}
+
+#buttonTopDel,
+#buttonTopC {
+    width: 102px;
+    text-align: center;
+}
+
+#zero,
+#divide {
+    width: 59px;
+}
+
+#result {
+    width: 85px;
+}
+
+#inputText {
+    height: 50px;
+    width: 220px;
+    background-color: #E0DCDF;
+    margin-bottom: 20px;
+    margin-top: 3px;
+    border-radius: 8px;
+    font-size: 30px;
+}
